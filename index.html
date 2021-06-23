@@ -2,134 +2,97 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <style>
-        .grid-item:nth-child(odd) {
-            background-color: rgb(0, 225, 255);
-        }
-
-        .grid-item:nth-child(even) {
-            background-color: chocolate;
-        }
-
-        .grid-item.top {
-            grid-area: top;
-            background-color: darkgreen;
-        }
-
-        .grid-item.second {
-            grid-area: second;
-
-        }
-
-        .grid-item.next {
-            grid-area: next;
-        }
-
-        .grid-item.next1 {
-            grid-area: next1;
-        }
-
-        .grid-item.next2 {
-            grid-area: next2;
-        }
-
-        .grid-item.another {
-            grid-area: another;
-            background-color: gold;
-        }
-
-        .grid-item.another1 {
-            grid-area: another1;
-            background-color: dimgray;
-        }
-
-        .grid-item.another2 {
-            grid-area: another2;
-            background-color: darksalmon;
-        }
-
-        .grid-item.last {
-            grid-area: last;
-            background-color: red;
-        }
-
-        .grid-container {
-            display: grid;
-            /* grid-template-columns: 100px minmax(300px, auto) 300px; */
-            grid-template-areas: 'top top top second'
-                'next next1 next2 next2'
-                'another another another1 another2'
-                'last last last last';
-            grid-gap: 10px;
-        }
-
-        .grid-item {
-            min-height: 90px;
-            min-width: 100px;
-        }
-    </style>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <title>page for SM</title>
 </head>
 
 <body>
+  <header class="bg">
 
-    <div class="grid-container">
-        <div class="grid-item top">
-            <h2>Top</h2>
+  </header>
+  <main>
+    <div class="container">
+      <div class="wrap">
+        <div class="conten">
+          <img src="image/back.jpg" alt="">
+          <div class="con">
+            <h2>Happiness Unoekieodu</h2>
+            <h6>Works at Microsoft<br>Attended Ignagius Ajuru University<br>Port Harcourt</h6>
+            <div class="button">
+              <button type="button" class="btn btn-primary" style="font-size: 1rem;">Followers</button>
+              <button type="button" class="btn btn-success">Following</button>
+            </div>
+          </div>
         </div>
-        <div class="grid-item second">
-            <h2>Second</h2>
+      </div>
+      <div class="row">
+        <div class="col">
+          <div class="accordion" id="myStoryAccordion">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="accordionMyStoryHeader">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseMyStory" aria-expanded="true" aria-controls="collapseMyStory">
+                  My Story
+                </button>
+              </h2>
+              <div id="collapseMyStory" class="accordion-collapse collapse show"
+                aria-labelledby="accordionMyStoryHeader" data-bs-parent="#myStoryAccordion">
+                <div class="accordion-body">
+                  <h5>About</h5>
+                  <p>A brief description of you</p>
+                  <h5>Introduction</h5>
+                  <p>Put a little about yourself here so people know they've
+                    <br>found the correct Happiness.
+                  </p>
+                  <h5>Achievements</h5>
+                  <p>Examples: Survived high school, have 3 kids. etc. </p>
+                  <button type="button" class="btn btn" style="background-color: purple; color: white;">Edit</button>
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-        <div class="grid-item next">
-            <h2>Next</h2>
+        <div class="col">
+          <div class="accordion" id="accordionUserInfo">
+            <div class="accordion-item">
+              <h2 class="accordion-header" id="accordionUserInfo">
+                <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                  data-bs-target="#collapseUserInfo" aria-expanded="true" aria-controls="collapseUserInfo">
+                  User Info
+                </button>
+              </h2>
+              <div id="collapseUserInfo" class="accordion-collapse collapse show" aria-labelledby="accordionUserInfo"
+                data-bs-parent="#accordionUserInfo">
+                <div class="accordion-body">
+                  <h5>Name</h5>
+                  <p>Happiness Unoekeiodu</p>
+                  <h5>Address</h5>
+                  <p>No 24 4th Avenue Egeblu </p>
+                  <h5>Telephone</h5>
+                  <p>+2348160988771 </p>
+                  <h5>E-mail</h5>
+                  <p>realhappiness25@gmail.com</p>
+                  <h5>website</h5>
+                  <p>www.realhappiness.com</p>
+                  <button type="button" class="btn btn-success">Edit</button>
+                </div>
+
+              </div>
+            </div>
+
+          </div>
         </div>
-        <div class="grid-item next1">
-            <h2>
-                Next 1
-            </h2>
-        </div>
-        <div class="grid-item next2">
-            <h2>
-                Next 2
-            </h2>
-        </div>
-        <div class="grid-item another">
-            <h2>
-                Another
-            </h2>
-        </div>
-        <div class="grid-item another1">
-            <h2>
-                Another 1
-            </h2>
-        </div>
-        <div class="grid-item another2">
-            <h2>
-                Another 2
-            </h2>
-        </div>
-        <div class="grid-item last">
-            <h2>Last</h2>
-        </div>
-        <!-- <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div>
-        <div class="grid-item"></div> -->
-    </div>
+      </div>
+  </main>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4"
+    crossorigin="anonymous"></script>
+
 </body>
 
 </html>
