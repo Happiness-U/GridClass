@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .grid-item:nth-child(odd) {
+            background-color: rgb(0, 225, 255);
+        }
+
+        .grid-item:nth-child(even) {
+            background-color: chocolate;
+        }
+
+        .grid-item.top {
+            grid-area: top;
+            background-color: darkgreen;
+        }
+
+        .grid-item.second {
+            grid-area: second;
+
+        }
+
+        .grid-item.next {
+            grid-area: next;
+        }
+
+        .grid-item.next1 {
+            grid-area: next1;
+        }
+
+        .grid-item.next2 {
+            grid-area: next2;
+        }
+
+        .grid-item.another {
+            grid-area: another;
+            background-color: gold;
+        }
+
+        .grid-item.another1 {
+            grid-area: another1;
+            background-color: dimgray;
+        }
+
+        .grid-item.another2 {
+            grid-area: another2;
+            background-color: darksalmon;
+        }
+
+        .grid-item.last {
+            grid-area: last;
+            background-color: red;
+        }
+
+        .grid-container {
+            display: grid;
+            /* grid-template-columns: 100px minmax(300px, auto) 300px; */
+            grid-template-areas: 'top top top second'
+                'next next1 next2 next2'
+                'another another another1 another2'
+                'last last last last';
+            grid-gap: 10px;
+        }
+
+        .grid-item {
+            min-height: 90px;
+            min-width: 100px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="grid-container">
+        <div class="grid-item top">
+            <h2>Top</h2>
+        </div>
+        <div class="grid-item second">
+            <h2>Second</h2>
+        </div>
+        <div class="grid-item next">
+            <h2>Next</h2>
+        </div>
+        <div class="grid-item next1">
+            <h2>
+                Next 1
+            </h2>
+        </div>
+        <div class="grid-item next2">
+            <h2>
+                Next 2
+            </h2>
+        </div>
+        <div class="grid-item another">
+            <h2>
+                Another
+            </h2>
+        </div>
+        <div class="grid-item another1">
+            <h2>
+                Another 1
+            </h2>
+        </div>
+        <div class="grid-item another2">
+            <h2>
+                Another 2
+            </h2>
+        </div>
+        <div class="grid-item last">
+            <h2>Last</h2>
+        </div>
+        <!-- <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div>
+        <div class="grid-item"></div> -->
+    </div>
+</body>
+
+</html>

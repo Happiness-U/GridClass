@@ -1,0 +1,57 @@
+  *{
+      box-sizing: border-box;
+  }
+  body {
+    width: 100vw;
+    height: 100vh;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+  }
+
+.bg {
+    background-image: url(image/conflower.png);
+    background-size: cover;
+    width: 100%;
+    padding: 0px;
+    height: 40vh;
+    /* min-height: 150px; */
+}
+
+main{
+    position: relative;
+}
+img {
+    width: 7%;
+    border-radius: 50% 50%;
+    margin-top: -6%;
+    border: 2px solid rgb(144, 144, 144);
+    
+}
+.con h2 {
+font-size: 2vh;
+}
+.con h6{
+    font-size: 1.5vh;
+}
+.conten {
+    text-align: center;
+    justify-content: center;
+}
+.col{
+    margin-top: 15px;
+   
+}
+.accordion-body {
+    font-size: 1.5vh;
+}
+.accordion-body h5 {
+    font-size: 1.5vh;
+}
+.accordion {
+    background-color: #eee;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    transition: 0.4s;
+  }
